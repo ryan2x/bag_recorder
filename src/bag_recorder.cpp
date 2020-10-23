@@ -210,6 +210,7 @@ void BagRecorder::stop_recording() {
         return;
 
     clear_queue_signal_ = true;
+    stop_signal_ = true;
 
     //note that start_stop_lock is acting as a lock for both subscribers_
     //and also for subscribed_topics_
